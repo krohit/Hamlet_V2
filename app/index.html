@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="hamlet">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,17 @@
     <title>Hamlet Home</title>
     <script src="../vendor/js/angular.min.js"></script>
     <script src="../vendor/js/angular-route.min.js"></script>
+    <script src="../vendor/js/angular-resource.min.js"></script>
     <script src="js/router.js"></script>
     <link rel="stylesheet" href="../vendor/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/justified-nav.css"/>
+    <style>
+        .featurette-heading {
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -1px;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,58 +29,68 @@
 
     <div class="masthead">
         <h3 class="text-muted">Hamlet</h3>
-        <ul class="nav nav-justified">
+        <ul class="nav nav-justified nav-divider">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="resources.html">Resources</a></li>
             <li><a href="plays.html">Plays</a></li>
-            <li><a href="translator.html">Translatation</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="facts.html">Facts</a></li>
         </ul>
     </div>
 
     <!-- Jumbotron -->
     <div class="jumbotron">
-        <h1>Random stuff!</h1>
-
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus
-            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+        <h1>A <em>Hamlet</em> Website</h1>
+        <p class="lead">A website for all things <em>Hamlet</em>: History, analysis and even full length plays!</p>
     </div>
 
-    <!-- Example row of columns -->
     <div class="row">
-        <div class="col-lg-4">
-            <h2>Heading</h2>
-            <div ng-controller="MainController">
-                <ul ng-repeat="thing in things"> {{thing}}</ul>
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1>
+                    Why you should Read <em>Hamlet</em> <small>and why it's so great!</small>
+                </h1>
             </div>
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4">
-            <h2>Heading</h2>
-
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
-
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">
+                Awesome Quotes <span class="text-muted">You'll Love them!</span>
+            </h2>
+            <blockquote>
+                <p>
+                    To be, or not to be: that is the question:
+                    Whether 'tis nobler in the mind to suffer
+                    The slings and arrows of outrageous fortune,
+                    Or to take arms against a sea of troubles,
+                    And by opposing end them? To die: to sleep;
+                </p>
+                <small>From <cite title="Hamlet">Shakespeare's <em>Hamlet</em></cite></small>
+            </blockquote>
         </div>
-        <div class="col-lg-4">
-            <h2>Heading</h2>
-
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                fermentum massa.</p>
-
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-5">
+            <img class="img-responsive" src="res/hamlet-skull.jpg" alt="Hamlet Skull"/>
+        </div>
+    </div>
+    <hr class="divider"/>
+    <div class="row">
+        <div class="col-md-7">
+            <img class="img-responsive" src="res/hamlet-modern.jpg" alt="Modern Hamlet"/>
+        </div>
+        <div class="col-md-5">
+            <h2 class="featurette-heading pull-right">
+                Characters are very relatable <span class="text-muted">and there are many modern interpretations</span>
+            </h2>
         </div>
     </div>
 
-    <!-- Site footer -->
+    <div class="row" style="padding-top: 20px;">
+        <!-- share button(s) -->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Hamlet" data-size="large" data-hashtags="hamlet">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
     <div class="footer">
-        <p>&copy; Company 2013</p>
+        <p>&copy; Adrian Chmielewski-Anders and Rohit Kavukuntla 2013</p>
     </div>
 
 </div>
