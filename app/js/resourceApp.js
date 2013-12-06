@@ -13,5 +13,5 @@ function MainCtrl ($scope) {
         {name: "Ghost",    desc: "The Ghost of Hamlet Sr."},
         {name: "Fortinbras", desc: " Norwegian crown prince, who assumes the throne of Denmark after Hamlet's death"},
         {name: "Rosencrantz and Guildenstern", desc: "hildhood friends and schoolmates of Hamlet, who were summoned to Elsinore by Claudius and Gertrude"}
-    ]
+    ];
 }
