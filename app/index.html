@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hamlet Home</title>
+    <title>Hamlet | Home</title>
+    <script src="../vendor/js/jQuery.min.js"></script>
     <script src="../vendor/js/angular.min.js"></script>
     <script src="../vendor/js/angular-route.min.js"></script>
     <script src="../vendor/js/angular-resource.min.js"></script>
@@ -39,15 +40,17 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron">
-        <h1>A <em>Hamlet</em> Website</h1>
-        <p class="lead">A website for all things <em>Hamlet</em>: History, analysis and even full length plays!</p>
+        <h1><em>Hamlet</em>: A Rag Tag Guide</h1>
+
+        <p class="lead">A Rag Tag Guide to <em>Hamlet</em></p>
     </div>
 
     <div class="row">
         <div class="col-md-12">
             <div class="page-header">
                 <h1>
-                    Why you should Read <em>Hamlet</em> <small>and why it's so great!</small>
+                    Why you should Read <em>Hamlet</em>
+                    <small>and why it's so great!</small>
                 </h1>
             </div>
         </div>
@@ -55,7 +58,7 @@
     <div class="row">
         <div class="col-md-7">
             <h2 class="featurette-heading">
-                Awesome Quotes <span class="text-muted">You'll Love them!</span>
+                Powerful Language <span class="text-muted">You'll Love it!</span>
             </h2>
             <blockquote>
                 <p>
@@ -73,21 +76,30 @@
         </div>
     </div>
     <hr class="divider"/>
-    <div class="row">
-        <div class="col-md-7">
-            <img class="img-responsive" src="res/hamlet-modern.jpg" alt="Modern Hamlet"/>
-        </div>
-        <div class="col-md-5">
-            <h2 class="featurette-heading pull-right">
-                Characters are very relatable <span class="text-muted">and there are many modern interpretations</span>
-            </h2>
-        </div>
-    </div>
+    <!--<div class="row">-->
+        <!--<div class="col-md-7">-->
+            <!--<img class="img-responsive" src="res/hamlet-modern.jpg" alt="Modern Hamlet"/>-->
+        <!--</div>-->
+        <!--<div class="col-md-5">-->
+            <!--<h2 class="featurette-heading pull-right">-->
+                <!--Characters are very relatable <span class="text-muted">and there are many modern interpretations</span>-->
+            <!--</h2>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <div class="row" style="padding-top: 20px;">
         <!-- share button(s) -->
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Hamlet" data-size="large" data-hashtags="hamlet">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Hamlet" data-size="large"
+           data-hashtags="hamlet">Tweet</a>
+        <script>!function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');</script>
     </div>
     <div class="footer">
         <p>&copy; Adrian Chmielewski-Anders and Rohit Kavukuntla 2013</p>
