@@ -87,3 +87,13 @@ body {
     }
 }
 
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.carousel-inner>.item>img {
+    margin: 0 auto;
+    height: 490px;
+}
